@@ -1,0 +1,100 @@
+/* =========== Global Resets/Utilities (optional) =========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: transparent; /* Keep transparent if your swirl/particle script sets a dark bg */
+    color: #fff; /* Default text color changed to white */
+  }
+  
+  /* =========== Hero Container =========== */
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: transparent; /* Let the dark swirl/particle background show through */
+    overflow: hidden;
+  }
+  
+  /* =========== Navigation Bar =========== */
+  .hero-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; /* on top of background text */
+  }
+  
+  .hero-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* Light text */
+  }
+  
+  .hero-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .hero-nav li a {
+    text-decoration: none;
+    color: #fff; /* Light text */
+  }
+  
+  /* =========== Main Hero Content =========== */
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3; /* ensure it's above the big watermark text */
+  }
+  
+  .hero-welcome {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff; /* Light text */
+  }
+  
+  .hero-title {
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: #fff; /* Light text */
+  }
+  
+  .hero-subtitle {
+    font-size: 2rem;
+    color: #ddd; /* Slightly dimmer white for contrast */
+  }
+  
+  /* Gradient text effect for 'Ahmed' (example) */
+  .gradient-text {
+    background: linear-gradient(to right, #7d2ae8, #3a86ff);
+    -webkit-background-clip: text;
+    color: transparent; /* Show the gradient */
+  }
+  
+  /* =========== Large Watermark Text =========== */
+  .hero-bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05); /* Very faint white text */
+    pointer-events: none; /* so it doesn’t interfere with clicks */
+    z-index: 1; /* behind hero content */
+  }
+  

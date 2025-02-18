@@ -11,8 +11,7 @@ const Hero = () => {
         <span class="gradient-text">Ishan </span>Siddhartha 
         </h1>
         </div>
-    <div class="hero-bg-text"><p>DEV</p>
-        <p>ELOPER</p>
+    <div class="hero-bg-text"><p>DEVELOPER</p>
     </div>
     </div>
   );

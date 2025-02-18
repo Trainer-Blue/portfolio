@@ -53,7 +53,7 @@ const StyledWrapper = styled.div`
 
   .example-2 {
     position: fixed;
-    right: 1rem; /* adjust as needed */
+    right: 0.5rem; /* adjust as needed */
     top: 21%;
     transform: translateY(-50%);
     display: flex;
@@ -72,7 +72,7 @@ const StyledWrapper = styled.div`
     right: 110%;
     transform: translateY(200%);
     color: #fff;
-    padding: 8px 10px;
+    padding: 6.5px 10px;
     border-radius: 5px;
     opacity: 0;
     visibility: hidden;

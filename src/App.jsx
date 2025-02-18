@@ -5,12 +5,15 @@ import Socials from "./components/Socials";
 
 function App() {
   return (
-    <div className="demo-2" style={{ position: "relative", width: "100vw", height: "100vh" }}>
+    <div className="demo-2">
       <SwirlBackground />
       <Hero />
       <Socials />
+      <div style={{ height: "200vh" }}></div>
     </div>
   );
 }
+
+
 
 export default App;

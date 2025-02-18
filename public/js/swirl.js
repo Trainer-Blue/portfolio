@@ -199,7 +199,7 @@ function draw() {
   renderGlow();
   renderToScreen();
 
-	setTimeout(() => window.requestAnimationFrame(draw), 20);
+	setTimeout(() => window.requestAnimationFrame(draw), 10);
 }
 
 window.addEventListener('load', setup);

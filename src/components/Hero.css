@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     background: transparent; /* Keep transparent if your swirl/particle script sets a dark bg */
     color: #fff; /* Default text color changed to white */
-  }
-  
-  /* =========== Hero Container =========== */
-  .hero-container {
+}
+
+/* =========== Hero Container =========== */
+.hero-container {
     position: relative;
     width: 100%;
     height: 100vh;

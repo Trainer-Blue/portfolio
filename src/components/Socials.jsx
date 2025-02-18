@@ -4,223 +4,150 @@ import styled from 'styled-components';
 const Socials = () => {
   return (
     <StyledWrapper>
-      <div className="action-wrap">
-        <button className="action" type="button">
-          <svg className="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none">
-            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-          </svg>
-          <span className="action-content" data-content="x" />
-        </button>
-        <button className="action" type="button">
-          <svg className="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none">
-            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-          </svg>
-          <span className="action-content" data-content="github" />
-        </button>
-        <button className="action" type="button">
-          <svg className="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none">
-            <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-            <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-            <path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" />
-            <path d="M7 16.5c3.5 1 6.5 1 10 0" />
-          </svg>
-          <span className="action-content" data-content="discord" />
-        </button>
-        <div className="backdrop" />
-      </div>
+      <ul className="example-2">
+        <li className="icon-content">
+          <a href="https://www.linkedin.com/in/ishan-siddhartha-647544299/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-social="linkedin">
+            <div className="filled" />
+            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16" xmlSpace="preserve">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" fill="currentColor" />
+            </svg>
+          </a>
+          <div className="tooltip">LinkedIn</div>
+        </li>
+        <li className="icon-content">
+          <a href="https://github.com/Trainer-Blue" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-social="github">
+            <div className="filled" />
+            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-github" viewBox="0 0 16 16" xmlSpace="preserve">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" fill="currentColor" />
+            </svg>
+          </a>
+          <div className="tooltip">GitHub</div>
+        </li>
+        <li className="icon-content">
+          <a href="https://www.instagram.com/sidd_1shan?igsh=MWhqZWlxMmJjcG9oOQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-social="instagram">
+            <div className="filled" />
+            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16" xmlSpace="preserve">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" fill="currentColor" />
+            </svg>
+          </a>
+          <div className="tooltip">Instagram</div>
+        </li>
+        <li className="icon-content">
+          <a href="https://x.com/1IshanSidd1" target="_blank" rel="noopener noreferrer" aria-label="Twitter" data-social="twitter">
+            <div className="filled" />
+            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-youtube" viewBox="0 0 16 16" xmlSpace="preserve">
+            <path d="M5.026 15c6.038 0 9.341-5 9.341-9.334 0-.14 0-.282-.01-.422A6.67 6.67 0 0 0 16 3.542a6.575 6.575 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.084.793 3.286 3.286 0 0 0-5.593 2.994A9.325 9.325 0 0 1 1.112 2.1a3.286 3.286 0 0 0 1.017 4.381A3.323 3.323 0 0 1 .64 6.575v.041a3.286 3.286 0 0 0 2.633 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.286 3.286 0 0 0 3.066 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045 9.344 9.344 0 0 0 5.026 1.465"/>
+            </svg>
+          </a>
+          <div className="tooltip">Twitter</div>
+        </li>
+      </ul>
     </StyledWrapper>
   );
 }
 
 const StyledWrapper = styled.div`
-  /* Fix the action group on the right and center vertically */
-  .action-wrap {
+  ul {
+    list-style: none;
+  }
+
+  .example-2 {
     position: fixed;
     right: 1rem; /* adjust as needed */
-    top: 50%;
+    top: 21%;
     transform: translateY(-50%);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    border-radius: 9999px;
   }
-
-  .backdrop {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-radius: 9999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .backdrop::before {
-    content: "";
-    position: absolute;
-    height: 10.5rem;
-    width: 10.5rem;
-    border-radius: 9999px;
-    background: linear-gradient(144deg, #af40ff, #4f46e5);
-    animation: rotate 1.5s linear infinite;
-  }
-  .backdrop::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(8px);
-    border-radius: 9999px;
-    z-index: 1;
-  }
-
-  .action {
-    --sz-light-hover: 60px;
-    --rd-light-hover: 9999px;
-    --l-light-hover: 14px;
-    --cl-light: #0000;
-    --cr-light: #af40ff;
+  .example-2 .icon-content {
+    margin: 0 10px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 
-        transform, 
-        color, 
-        background-color,
-        300ms ease;
-    height: 3.5rem;
-    width: 3.5rem;
-    border: none;
-    color: #444444;
-    background: none transparent;
-    cursor: pointer;
     padding: 0.5rem;
-    border-radius: 9999px;
   }
-
-  .action-icon {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 9;
-    padding: 0.5rem;
-    border-radius: 9999px;
-    background-color: #f1f1f1;
-    transition: 
-        transform, 
-        color, 
-        background,
-        300ms ease;
-  }
-
-  /* Popup content now positioned using right instead of left */
-  .action-content {
-    --sz-light-hover: 100px;
-    --rd-light-hover: 6px;
-    --l-light-hover: 0px;
-    --cl-light: #fff;
-    --cr-light: #af40ff;
-    transition: 
-        transform, 
-        400ms ease;
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: 100%;
+    right: 110%;
+    transform: translateY(200%);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
     opacity: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    background-color: inherit;
-    border-radius: 6px;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
     overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: max-content;
-    height: 1.75rem;
-    padding: 8px 1px;
-    position: absolute;
-    right: 0; /* originally left: 0; now on the right */
-    z-index: -1;
-    border: 1px solid #ccc;
-  }
-
-  /* Adjust the pseudo-element to slide in from the right side */
-  .action-content::before {
-    content: attr(data-content);
-    transition: 
-        transform, 
-        300ms ease;
-    text-transform: capitalize;
-    font-size: medium;
-    font-weight: 600;
-    z-index: 1;
-    transform: translateX(-100%); /* slide in from right */
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
     background-color: #fff;
-    border-radius: calc(var(--rd-light-hover) - 2px);
-    padding-inline: 4px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
   }
 
-  .action::after,
-  .action-content::after {
-    content: "";
-    opacity: 0;
-    position: absolute;
-    border-radius: var(--rd-light-hover);
-    transition: all 50ms ease 200ms;
-    background: conic-gradient(
-      from 45deg at 50% 50%,
-      var(--cl-light),
-      var(--cr-light),
-      var(--cl-light),
-      var(--cl-light),
-      var(--cl-light),
-      var(--cr-light),
-      var(--cl-light),
-      var(--cl-light),
-      var(--cl-light)
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
     );
   }
-
-  .action:hover .action-icon {
-    color: #000;
-    background-color: #fff;
-    transform: scale(1.4) translate3d(-12px, 0px, -12px);
-  }
-
-  .action:hover::after,
-  .action-content::after {
-    height: var(--sz-light-hover);
-    width: var(--sz-light-hover);
-    right: var(--l-light-hover);
-    opacity: 1;
-    animation: rotate 4s linear infinite;
-  }
-
-  @keyframes rotate {
-    from {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(1turn);
-    }
-  }
-
-  /* On hover, move the popup text to the left of the button */
-  .action:hover .action-content {
-    color: #000;
-    background-color: #fff;
-    opacity: 1;
-    width: max-content;
-    right: calc(100% + 24px); /* now anchored to the right */
-    z-index: 9;
-  }
-
-  .action:hover .action-content::before {
-    transform: translateX(0px);
-  }
-`;
+  .example-2 .icon-content a[data-social="twitter"] .filled,
+  .example-2 .icon-content a[data-social="twitter"] ~ .tooltip {
+    background-color: #1DA1F2;
+  }`;
 
 export default Socials;

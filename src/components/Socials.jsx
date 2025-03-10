@@ -148,6 +148,21 @@ const StyledWrapper = styled.div`
   .example-2 .icon-content a[data-social="twitter"] .filled,
   .example-2 .icon-content a[data-social="twitter"] ~ .tooltip {
     background-color: #1DA1F2;
-  }`;
+  }
+    /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .example-2 {
+      top: 9.5%;
+    }
+    .example-2 .icon-content {
+      width: 45px; /* 10% smaller */
+      height: 45px; /* 10% smaller */
+    }
+    .example-2 .icon-content a svg {
+      width: 27px; /* 10% smaller */
+      height: 27px; /* 10% smaller */
+    }
+  }
+`;
 
 export default Socials;

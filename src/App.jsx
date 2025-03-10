@@ -1,6 +1,6 @@
 import React from "react";
 import SwirlBackground from "./components/SwirlBackground";
-import Hero from "./components/Hero"; // your existing hero component
+import Hero from "./components/Hero";
 import Socials from "./components/Socials";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
@@ -9,14 +9,24 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div>
+    <div className="relative">
       <SwirlBackground />
-
-      {/* <Sidebar /> */}
-      
-      <main className="ml-64">
-        <section id="hero">
+      <Sidebar />
+      <main className="relative" style={{ marginLeft: '60px', marginRight: '60px' }}>
+        <section id="hero" className="min-h-screen z-10">
           <Hero />
+        </section>
+        
+        <section id="about" className="min-h-screen z-10" style={{ paddingTop: '40px', paddingBottom: '60px' }}>
+          <About />
+        </section>
+        
+        <section id="projects" className="min-h-screen z-10" style={{ paddingTop: '90px', paddingBottom: '60px' }}>
+          <Projects />
+        </section>
+        
+        <section id="contact" className="min-h-screen z-10" style={{ paddingTop: '90px', paddingBottom: '60px' }}>
+          <Contact />
         </section>
       </main>
       <Socials />
@@ -25,3 +35,4 @@ function App() {
 }
 
 export default App;
+

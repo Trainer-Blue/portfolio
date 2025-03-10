@@ -24,14 +24,13 @@ const useStyles = makeStyles((theme) => ({
 
 const Contact = () => {
   const classes = useStyles();
-  const greetings = "Say hello.";
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_8bezxog', 'template_jmsk313', form.current, 'knwNTK4YU4K30HYMd')
+    emailjs.sendForm('service_nfv8t0w', 'template_s2yzuv5', form.current, 'DjXjOqrdkG5vOzkGv')
       .then((result) => {
         console.log(result.text);
         Swal.fire({

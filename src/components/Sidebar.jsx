@@ -54,6 +54,7 @@ const Sidebar = () => {
         <img
           src="/icons/is_logow.svg"
           alt="ishan siddhartha logo"
+          className="logo"
           style={{ width: "60px"}}
         />
       </div>

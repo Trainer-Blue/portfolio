@@ -3,6 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 nav {
   position: fixed;
   z-index: 10;
@@ -61,4 +63,21 @@ nav a:not(.active)::after {
 
 nav a:hover::after {
   transform: scaleX(0.7);
+}
+
+.logo {
+  width: 60px;
+  transition: width 1s ease;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .logo {
+    width: 50px !important; /* !important to override inline styles */
+  }
+  
+  /* Also adjust navigation position for better mobile layout */
+  nav {
+    left: -8rem; /* Adjust left position for smaller screens */
+  }
 }

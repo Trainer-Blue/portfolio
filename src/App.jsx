@@ -12,20 +12,20 @@ function App() {
     <div className="relative">
       <SwirlBackground />
       <Sidebar />
-      <main className="relative" style={{ marginLeft: '60px', marginRight: '60px' }}>
-        <section id="hero" className="min-h-screen z-10">
+      <main className=" z-10" style={{ marginLeft: '60px', marginRight: '60px' }}>
+        <section id="hero" className="min-h-screen">
           <Hero />
         </section>
         
-        <section id="about" className="min-h-screen z-10" style={{ paddingTop: '40px', paddingBottom: '60px' }}>
+        <section id="about" className="min-h-screen" style={{ paddingTop: '40px', paddingBottom: '60px' }}>
           <About />
         </section>
         
-        <section id="projects" className="min-h-screen z-10" style={{ paddingTop: '90px', paddingBottom: '60px' }}>
+        <section id="projects" className="min-h-screen" style={{ paddingTop: '90px', paddingBottom: '60px' }}>
           <Projects />
         </section>
         
-        <section id="contact" className="min-h-screen z-10" style={{ paddingTop: '90px', paddingBottom: '60px' }}>
+        <section id="contact" className="min-h-screen" style={{ paddingTop: '90px', paddingBottom: '60px' }}>
           <Contact />
         </section>
       </main>

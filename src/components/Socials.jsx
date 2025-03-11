@@ -78,6 +78,7 @@ const StyledWrapper = styled.div`
     visibility: hidden;
     font-size: 14px;
     transition: all 0.3s ease;
+    pointer-events: none;
   }
   .example-2 .icon-content:hover .tooltip {
     opacity: 1;

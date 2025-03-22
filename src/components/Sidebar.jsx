@@ -57,11 +57,13 @@ const Sidebar = () => {
   return (
     <div>
       <div className={`fixed top-0 left-1 z-10 ${mounted ? 'animate-logo' : 'opacity-0'}`}>
-        <img
-          src="/icons/is_logow.svg"
-          alt="ishan siddhartha logo"
-          className="logo"
-        />
+        <a href="#hero">
+          <img
+            src="/icons/is_logow.svg"
+            alt="ishan siddhartha logo"
+            className="logo"
+          />
+        </a>
       </div>
       <nav className={mounted ? 'nav-visible' : 'nav-hidden'}>
         <a 

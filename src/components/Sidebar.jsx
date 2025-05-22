@@ -107,7 +107,7 @@ const Sidebar = () => {
       {/* Resume Link - Positioned at bottom right with enhanced hover effect */}
       <div className={`fixed bottom-5 left-1 z-10 ${mounted ? 'animate-resume opacity-0' : 'opacity-0'}`}>
         <a 
-          href="/resume.pdf" 
+          href="https://drive.google.com/file/d/1S4JSxiJ2k5b-qNZPecJstGefQfsbow1h/view?usp=drive_link" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-transparent px-4 py-2 rounded-full 
